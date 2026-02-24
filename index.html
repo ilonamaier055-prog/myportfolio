@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <title>Portfolio Website</title>
+</head>
+<body>
+<header>
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">Ilona Maier</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+</div>
+</header>
+<section class = "hero">
+    <div class="hero-text">
+    <h1>Welcome, Visitor!</h1>
+        <p>Here you can find information about me, my skills, and my projects.</p>
+    </div>
+           
+<div class="hero-image">
+  <div class="window">
+    <div class="window-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <img src="images/ilonamaier.png" alt="Portrait Ilona Maier">
+  </div>
+</div>
+</section>
+<script>
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+</body>
+</html>
